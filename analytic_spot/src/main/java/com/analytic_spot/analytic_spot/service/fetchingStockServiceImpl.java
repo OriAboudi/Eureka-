@@ -1,7 +1,6 @@
 package com.analytic_spot.analytic_spot.service;
 
 import com.analytic_spot.analytic_spot.data.dto.StockSpotDto;
-import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
@@ -11,7 +10,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 @Service
-public class fetchingStockServiceImpl implements fetchingStockService {
+public class fetchingStockServiceImpl implements FetchingStockService {
     private final RestTemplate restTemplate;
     private final String stockSpotURL;
 
@@ -28,7 +27,5 @@ public class fetchingStockServiceImpl implements fetchingStockService {
             return Arrays.stream(responseEntity.getBody()).toList();
         }
         return Collections.emptyList();
-
-
     }
 }

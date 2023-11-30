@@ -8,5 +8,6 @@ import java.util.List;
 public interface StockSpotService {
     List<StockSpotDto> findAll();
     StockSpotDto insert(StockSpotDto stockSpotDto );
+    void updateStockPrice();
 
 }

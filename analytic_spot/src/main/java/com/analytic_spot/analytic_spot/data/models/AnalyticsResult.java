@@ -14,8 +14,6 @@ public class AnalyticsResult {
 
 
     private BigDecimal averagePrice;
-    private LocalDate firstCreationTimestamp;
-    private LocalDate lastUpdatedTimestamp;
     private BigDecimal totalPrice;
     private int totalStocks;
     private BigDecimal highestPrice;
