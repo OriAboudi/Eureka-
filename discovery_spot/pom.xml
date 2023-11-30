@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -8,11 +8,11 @@
 		<version>3.2.0</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.eureka</groupId>
+	<groupId>com.discovery_spot</groupId>
 	<artifactId>discovery_spot</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>discovery_spot</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Demo project for Eureka</description>
 	<properties>
 		<java.version>17</java.version>
 		<spring-cloud.version>2023.0.0-RC1</spring-cloud.version>
@@ -20,7 +20,7 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+			<artifactId>spring-cloud-netflix-eureka-</artifactId>
 		</dependency>
 
 		<dependency>

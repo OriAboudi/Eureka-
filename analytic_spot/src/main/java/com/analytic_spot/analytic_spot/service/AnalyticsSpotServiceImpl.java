@@ -5,6 +5,7 @@ import com.analytic_spot.analytic_spot.data.models.AnalyticsResult;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.sql.Timestamp;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -20,33 +21,28 @@ public class AnalyticsSpotServiceImpl implements AnalyticsSpotService {
         BigDecimal lowestPrice = BigDecimal.ZERO;
         BigDecimal totalPrice = BigDecimal.ZERO;
         int totalStocks =0;
-        Timestamp firstCreationTimestamp = ;
-        Timestamp lastUpdatedTimestamp;
 
         for(StockSpotDto stock: stocksSpot){
             totalStocks++;
             totalPrice.add(stock.getPrice());
             if(highestPrice.compareTo(stock.getPrice())>0){
                 highestPrice=stock.getPrice();
-            }else {
+            }
+            if(lowestPrice.compareTo(stock.getPrice())<0){
                 lowestPrice = stock.getPrice();
             }
 
         }
-
+        averagePrice = totalPrice.divide(BigDecimal.valueOf(totalStocks),2 , RoundingMode.HALF_UP);
 
         return AnalyticsResult.builder()
                 .averagePrice(averagePrice)
                 .highestPrice(highestPrice)
                 .lowestPrice(lowestPrice)
                 .totalPrice(totalPrice)
-                .totalStocks(totalStocks[0])
-                .firstCreationTimestamp(firstCreationTimestamp)
-                .lastUpdatedTimestamp(lastUpdatedTimestamp)
+                .totalStocks(totalStocks)
                 .build();
     }
-
-
 }
 
 
