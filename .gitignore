@@ -1,0 +1,11 @@
+analytic_spot/.idea
+analytic_spot/.mvn
+analytic_spot/target
+
+discovery_spot/.idea
+discovery_spot/.mvn
+discovery_spot.target
+
+stock-spot/.idea
+stock-spot/.mvn
+stock-spot/target
