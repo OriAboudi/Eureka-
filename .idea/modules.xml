@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Eureka.iml" filepath="$PROJECT_DIR$/.idea/Eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/analytic_spot/analytic_spot.iml" filepath="$PROJECT_DIR$/analytic_spot/analytic_spot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/discovery_spot/discovery_spot.iml" filepath="$PROJECT_DIR$/discovery_spot/discovery_spot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/stock-spot/stock_spot.iml" filepath="$PROJECT_DIR$/stock-spot/stock_spot.iml" />
+    </modules>
+  </component>
+</project>
